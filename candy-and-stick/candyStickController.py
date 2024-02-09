@@ -6,7 +6,7 @@ class CandyStickClass():
         self.check_result = True
 
     def out_check_result(self):
-        if self.check_result == False:
+        if not self.check_result:
             print("Error")
         else:
             print("Correct")
@@ -19,9 +19,7 @@ class CandyStickClass():
 
 ROBOTSTATUS = 1
 boot = CandyStickClass()
-#ロボットからのステータス送信
+# ロボットからのステータス送信
 if ROBOTSTATUS == 1:
     boot.checkCommunication()
 boot.out_check_result()
-
-
