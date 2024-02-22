@@ -1,5 +1,5 @@
-from .candyStickController import CandyStickClass
-from .aiManager import ManagementAI
+from candyStickController import CandyStickClass
+from aiManager import ManagementAI
 import time
 
 ROBOTSTATUS = 1 #ロボットとの通信状況
