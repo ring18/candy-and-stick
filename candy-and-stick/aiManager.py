@@ -26,7 +26,7 @@ class ManagementAI:
     def InputImagetoAI(self, fn):
         img = cv.imread(fn)
         grayimg = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-        eye_cascade = cv.CascadeClassifier(os.path.join(Path(os.getcwd()).parent, 'haarcascade_eye.xml'))
+        eye_cascade = cv.CascadeClassifier(os.path.join(Path(os.getcwd()).parent, 'model', 'haarcascade_eye.xml'))
         eyerect = eye_cascade.detectMultiScale(grayimg)
         if len(eyerect) != 2:
             print("0")
