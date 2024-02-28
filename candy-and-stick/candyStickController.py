@@ -17,11 +17,13 @@ class CandyStickClass():
         return 1
 
 
+'''
 ROBOTSTATUS = 1
 boot = CandyStickClass()
 #ロボットからのステータス送信
 if ROBOTSTATUS == 1:
     boot.checkCommunication()
 boot.out_check_result()
+'''
 
 
